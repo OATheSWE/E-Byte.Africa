@@ -1,0 +1,30 @@
+.title {
+    font-size: rem(34px);
+    font-weight: 900;
+    color: #0e1f51;
+  
+    @media (max-width: $mantine-breakpoint-sm) {
+      font-size: rem(24px);
+    }
+  }
+  
+  
+  .card {
+    background: #F7F7F7;
+  }
+
+  
+  .cardTitle {
+    font-size: 20px;
+    font-weight: 800;
+    &::after {
+      content: '';
+      display: block;
+      background-color: #FF3E54;
+      width: rem(45px);
+      height: rem(4px);
+      margin-top: var(--mantine-spacing-sm);
+      border-radius: 10px;  
+    }
+
+  }
