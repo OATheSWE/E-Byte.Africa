@@ -47,6 +47,7 @@ export default function About2() {
             <Image
               src={ImageCollection.about}
               className={`w-full object-cover object-top rounded-xl`}
+              alt="About Image"
             />
           </animated.div>
         </Grid.Col>

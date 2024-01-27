@@ -51,8 +51,7 @@ export default function Header() {
             <Title
               className={`font-sans ${style.title} text-[34px] max-lg:text-[27px]`}
             >
-              Welcome to <span className="text-primary">e-Byte Africa</span> – Where Digital Innovation Meets
-              Excellence 🌐💡
+              Welcome to <span className="text-primary">e-Byte Africa</span> – Empowering Africa's Digital Future 🌍💡
             </Title>
 
             <Text className="mt-2">
@@ -72,6 +71,7 @@ export default function Header() {
             <Image
               src={ImageCollection.hero} 
               className={`max-sm:object-contain w-full object-cover`}
+              alt="Hero Image"
             />
           </animated.div>
         </Grid.Col>

@@ -42,6 +42,7 @@ export default function Portfolio() {
           <Image
             src={PPTS[index].src}
             className="w-full h-full transition duration-500 hover:scale-110"
+            alt={`Project Image ${index}`}
           />
         </Card.Section>
 

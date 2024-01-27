@@ -39,6 +39,7 @@ const AboutPage = () => {
       <Image
         src={leaders[index].image}
         className={`w-[300px] max-h-[300px] h-full object-cover object-top rounded-xl`}
+        alt={`Leader Image ${index}`}
       />
       <Text className="text-[20px] font-bold text-center text-primary">
         {leaders[index].name}
