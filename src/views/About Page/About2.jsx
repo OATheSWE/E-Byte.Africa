@@ -5,6 +5,7 @@ import { useSpring, animated } from "@react-spring/web";
 import { styles } from "../../data";
 import Btn from "../../components/button";
 import { useState } from "react";
+import { ImageCollection } from "../../../assets";
 
 export default function About2() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -44,7 +45,7 @@ export default function About2() {
             className="flex items-stretch max-lg:mx-auto"
           >
             <Image
-              src="../../../assets/images/about.png"  
+              src={ImageCollection.about}
               className={`w-full object-cover object-top rounded-xl`}
             />
           </animated.div>

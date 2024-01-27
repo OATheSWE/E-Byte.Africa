@@ -24,12 +24,11 @@
       }
     },
     "web": {
-      "favicon": "./assets/images/favicon.png",
       "bundler": "metro",
-      "assets": [
-        "./assets/images/"
-      ],
-      "output": "server"
-    }
+      "output": "single"
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }

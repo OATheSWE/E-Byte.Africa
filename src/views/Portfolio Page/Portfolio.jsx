@@ -31,7 +31,7 @@ export default function Portfolio() {
   });
 
   const all = trail.map((style, index) => (
-    <animated.div key={index} style={style}>
+    <animated.div key={index} style={style} ref={ref}>
       <Card
         withBorder
         radius="md"
@@ -66,7 +66,7 @@ export default function Portfolio() {
   ));
 
   return (
-    <section className={``} ref={ref}>
+    <section className={``} >
       <PagesHeader text={`Portfolio`} text2={`Home / Portfolio`} />
       <Space h={`4rem`} />
       <Heading title={`Portfolio`} description={`Our Work`} />

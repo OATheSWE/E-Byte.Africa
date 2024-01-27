@@ -1,6 +1,7 @@
 import React from "react";
 import { Group, Box, Burger, Drawer, ScrollArea, Text } from "@mantine/core";
 import classes from "./NavBar.module.css";
+import "./Navbar.css";
 import { useDisclosure } from "@mantine/hooks";
 import Btn from "../button";
 import { styles } from "../../data";
@@ -57,7 +58,6 @@ export default function NavBar() {
           onClick={toggleDrawer}
           hiddenFrom="sm"
           size={23}
-          color="#FF3E54"
         />
       </header>
 
@@ -72,7 +72,7 @@ export default function NavBar() {
         <ScrollArea
           h={`calc(100vh - 80px)`}
           mx="-md"
-          className="bg-white block mx-auto px-4"
+          className="block mx-auto px-4"
           
         >
           {navLinks.slice(0, 3).map((link, index) => (
@@ -80,6 +80,7 @@ export default function NavBar() {
               key={index}
               href={`${link.href}`}
               className={`font-sans ${classes.link}`}
+              onPress={toggleDrawer}
             >
               {link.text}
             </Link>
@@ -88,7 +89,8 @@ export default function NavBar() {
             <Link key={index} href={`${link.href}`}>
               <Btn
                 text={link.text}
-                style={`rounded-md h-[45px] bg-primary justify-center text-[16.5px] font-medium px-14 text-white hover:bg-secondary font-sans`}
+                style={`rounded-md w-full h-[45px] mt-3 bg-primary justify-center text-[16.5px] font-medium px-14 text-white hover:bg-secondary font-sans`}
+                click={toggleDrawer}
               />
             </Link>
           ))}

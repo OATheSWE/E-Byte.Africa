@@ -5,8 +5,11 @@ import { useSpring, animated } from "@react-spring/web";
 import { styles } from "../../data";
 import Btn from "../button";
 import style from "./Header.module.css";
+import { ImageCollection } from "../../../assets";
+
 
 export default function Header() {
+
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleScrollUp = () => {
@@ -67,7 +70,7 @@ export default function Header() {
         <Grid.Col span={{ base: 12, md: 6 }}>
           <animated.div style={leftColAnimation} className={style.floating}>
             <Image
-              src="../../assets/images/hero.png"
+              src={ImageCollection.hero} 
               className={`max-sm:object-contain w-full object-cover`}
             />
           </animated.div>

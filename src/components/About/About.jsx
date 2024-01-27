@@ -5,6 +5,7 @@ import { useSpring, animated } from "@react-spring/web";
 import { styles } from "../../data";
 import Btn from "../button";
 import { useState } from "react";
+import { ImageCollection } from "../../../assets";
 
 export default function About() {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -41,7 +42,7 @@ export default function About() {
         <Grid.Col span={{ base: 12, md: 5.3 }} className="flex">
           <animated.div style={leftColAnimation} className="flex items-stretch max-lg:mx-auto">
             <Image
-              src="../../../assets/images/about.png"
+              src={ImageCollection.about}
               className={`w-full object-cover object-top rounded-xl`}
             />
           </animated.div>

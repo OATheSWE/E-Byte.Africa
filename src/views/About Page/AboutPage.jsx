@@ -4,18 +4,20 @@ import { Heading, PagesHeader } from "../../components";
 import { useTrail, animated } from "@react-spring/web"; // Import useTrail and animated
 import About2 from "./About2";
 import { useInView } from "react-intersection-observer";
+import { ImageCollection } from "../../../assets";
+
 
 const AboutPage = () => {
   const leaders = [
     {
       name: "Osborne Aigbiremolen",
       role: "Co-Founder",
-      image: "../../../assets/images/osborne.jpeg",
+      image: ImageCollection.osborne,
     },
     {
       name: "Ifechukwu Success",
       role: "Co-Founder",
-      image: "../../../assets/images/ifechi.jpg",
+      image: ImageCollection.ifechi,
     },
   ];
 
@@ -33,7 +35,7 @@ const AboutPage = () => {
   });
 
   const animatedLeaders = trail.map((style, index) => (
-    <animated.div key={index} style={style} className="flex flex-col">
+    <animated.div key={index} style={style} className="flex flex-col" ref={ref}>
       <Image
         src={leaders[index].image}
         className={`w-[300px] max-h-[300px] h-full object-cover object-top rounded-xl`}
@@ -48,7 +50,7 @@ const AboutPage = () => {
   ));
 
   return (
-    <Box className="" ref={ref}>
+    <Box className="">
       <PagesHeader text={`About`} text2={`Home / About`} />
       <About2 />
       <Space h={`50px`} />  
