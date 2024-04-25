@@ -1,4 +1,6 @@
 export { styles } from "./StylesData";
-export { services } from "./ServicesData";
+export { keyFeatures } from "./FeaturesData";
 export { PPTS } from "./PortfolioData";
+export { packages } from "./PackagesData";
+export { faqArray } from "./FAQData";
 

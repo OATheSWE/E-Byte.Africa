@@ -1,13 +1,13 @@
 import { Title, Text, Grid, Image } from "@mantine/core";
-import classes from "./About.module.css";
+import classes from "./Welcome.module.css";
 import { useInView } from "react-intersection-observer";
 import { useSpring, animated } from "@react-spring/web";
 import { styles } from "../../data";
-import Btn from "../../components/button";
+import Btn from "../button";
 import { useState } from "react";
 import { ImageCollection } from "../../../assets";
 
-export default function About() {
+export default function Welcome() {
   const [scrollPosition, setScrollPosition] = useState(0);
 
   const handleScrollUp = () => {
@@ -17,7 +17,7 @@ export default function About() {
 
   const [ref, inView] = useInView({
     threshold: 0.4,
-    triggerOnce: true,
+    // triggerOnce: true,
   });
 
   // Animation for the right column (coming from the right)
@@ -32,44 +32,35 @@ export default function About() {
     <section ref={ref} className={`w-full`}>
       <Grid gutter={90} className={`font-sans`}>
         <Grid.Col span={{ base: 12, md: 6 }} className="flex" p={0}>
-          <div className="flex max-lg:mx-auto w-full">
+          <div className="flex max-lg:mx-auto">
             <Image
-              src={ImageCollection.about2}
-              className={`object-cover mt-12`}
+              src={ImageCollection.about}
+              className={`object-cover mt-2`}
               alt="About Image"
             />
           </div>
         </Grid.Col>
-        <Grid.Col span={{ base: 12, md: 6 }} className={`flex items-center`}>
+        <Grid.Col span={{ base: 12, md: 6 }} className={`flex items-center `}>
           <div className={`${styles.body}`}>
             <animated.div style={rightColAnimation}>
               <Title className={`text-accent font-sans mb-2`} order={4}>
-                \ Overview \
+                \ What We Do \
               </Title>
             </animated.div>
 
             <animated.div style={rightColAnimation}>
               <Title className={classes.title} order={2}>
-                The e-Byte Africa Story
+                Welcome to e-Byte Africa: Revolutionizing School Management
               </Title>
             </animated.div>
 
             <animated.div style={rightColAnimation}>
               <Text className="my-2 text-secondary">
-                e-Byte Africa, headquartered in Lagos, Nigeria, is dedicated to
-                revolutionizing education through innovative technology
-                solutions. Our team combines expertise in software development
-                and education management to empower K-12 private institutions.
-              </Text>
-            </animated.div>
-
-            <animated.div style={rightColAnimation}>
-              <Text className="my-2 text-secondary">
-                Driven by integrity and innovation, we collaborate closely with
-                educators and administrators to create cutting-edge tools that
-                streamline administrative tasks and enhance the learning
-                experience. Our commitment extends beyond technology — we're
-                shaping the future of education one school at a time.
+                At e-Byte Africa, we understand the complexities of running a
+                successful educational institution in today's dynamic world.
+                Based in the vibrant city of Lagos, Nigeria, we are proud to
+                introduce our innovative AI-powered School Management Systems,
+                designed specifically for K-12 private educational institutions.
               </Text>
             </animated.div>
 

@@ -7,8 +7,8 @@ import { Link } from "expo-router";
 const links = [
   { link: "/about", label: "About" },
   { link: "/services", label: "Our Services" },
-  { link: "/portfolio", label: "Portfolio" },
-  { link: "contact", label: "Get in Touch" },
+  // { link: "/portfolio", label: "Portfolio" },
+  { link: "/contact", label: "Get in Touch" },
 ];
 
 export default function Footer() {
@@ -25,7 +25,7 @@ export default function Footer() {
   ));
 
   return (
-    <div className={`${styles.body} ${classes.footer}`}>
+    <div className={`${styles.body} ${classes.footer} bg-secondary`}>
       <div className={` ${classes.inner}`}>
         <Group h="100%" className="flex items-center">
           <Link href="/">

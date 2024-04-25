@@ -2,6 +2,7 @@
   font-size: rem(36px);
   font-weight: 900;
   line-height: 1.1;
-  margin-bottom: var(--mantine-spacing-md);
+  margin-bottom: var(--mantine-spacing-xl);
   color: #eaeaea;
 }
+

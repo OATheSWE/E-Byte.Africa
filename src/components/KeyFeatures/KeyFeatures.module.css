@@ -10,7 +10,8 @@
   
   
   .card {
-    background: #F7F7F7;
+    max-height: 350px;
+    height: 100%;
   }
 
   
@@ -20,7 +21,7 @@
     &::after {
       content: '';
       display: block;
-      background-color: #FF3E54;
+      background-color: #cb4430;
       width: rem(45px);
       height: rem(4px);
       margin-top: var(--mantine-spacing-sm);

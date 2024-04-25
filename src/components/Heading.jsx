@@ -19,7 +19,7 @@ export default function Heading({ title, description, description2 }) {
 
   return (
     <animated.div ref={ref} style={headerAnimation}>
-      <Title className={`text-primary font-sans mb-2 text-center`} order={4}>
+      <Title className={`text-accent font-sans mb-2 text-center`} order={4}>
         \ {title} \
       </Title>
 
@@ -29,7 +29,7 @@ export default function Heading({ title, description, description2 }) {
         {description}
       </Title>
       <Title
-        className={`text-white text-center lg:text-[40px] text-[30px] font-bold mb-7`}
+        className={`text-primary text-center lg:text-[40px] text-[30px] font-bold mb-7`}
       >
         {description2}
       </Title>

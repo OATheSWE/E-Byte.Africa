@@ -91,7 +91,7 @@ export default function Contact() {
   };
 
   return (
-    <Paper ref={ref} className={`bg-secondary w-full py-10 ${styles.body}`}>
+    <Paper ref={ref} className={`bg-secondary w-full py-10 ${styles.body}`} radius={0}>
       <Heading title={`Get in Touch`} description2={`Hey! Lets Talk`} />
       <div className={classes.wrapper}>
         <animated.div style={leftColAnimation}>

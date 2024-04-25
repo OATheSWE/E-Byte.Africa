@@ -41,7 +41,7 @@ const AboutPage = () => {
         className={`w-[300px] max-h-[300px] h-full object-cover object-top rounded-xl`}
         alt={`Leader Image ${index}`}
       />
-      <Text className="text-[20px] font-bold text-center text-primary">
+      <Text className="text-[20px] font-bold text-center text-accent">
         {leaders[index].name}
       </Text>
       <Text className="text-[16px] font-medium text-center text-secondary">
@@ -51,12 +51,12 @@ const AboutPage = () => {
   ));
 
   return (
-    <Box className="">
+    <Box className="bg-primary overflow-x-hidden">
       <PagesHeader text={`About`} text2={`Home / About`} />
       <About2 />
-      <Space h={`50px`} />  
+      <Space h={`150px`} />  
       <Heading title={`Team`} description={`Our Leaders`} />
-      <div className="flex sm:flex-row flex-col items-center lg:justify-evenly justify-center max-sm:space-y-5 sm:space-x-5">
+      <div className="flex sm:flex-row flex-col items-center lg:justify-evenly justify-center max-sm:space-y-5 sm:space-x-5 pb-10">
         {animatedLeaders}
       </div>
     </Box>

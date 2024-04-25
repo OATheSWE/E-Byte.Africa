@@ -5,10 +5,10 @@ import { IconImports } from "../../../assets";
 function ContactIcon({ icon, title, description, ...others }) {
   return (
     <div className={classes.wrapper} {...others}>
-      <div className="flex w-[50px] h-[50px] justify-center items-center mr-5 bg-accent rounded-lg">
+      <div className="flex w-[50px] h-[50px] justify-center items-center mr-5 bg-primary rounded-lg">
         {icon}
       </div>
-      <div>
+      <div className="max-w-[170px] w-full">
         <Text size="xs" className={classes.title}>
           {title}
         </Text>
@@ -22,17 +22,17 @@ const MOCKDATA = [
   {
     title: "Email",
     description: "ebyte.africa@gmail.com",
-    icon: <IconImports.Email size={25} color={`#FF3E54`} />,
+    icon: <IconImports.Email size={25} color={`#cb4430`} />,
   },
   {
     title: "Phone",
-    description: "+234 701 275 7912",
-    icon: <IconImports.Phone size={25} color={`#FF3E54`} />,
+    description: "+234 701 275 7912, +234 9153388296",
+    icon: <IconImports.Phone size={25} color={`#cb4430`} />,
   },
   {
     title: "Address",
     description: "Remote",
-    icon: <IconImports.Location size={25} color={`#FF3E54`} />,
+    icon: <IconImports.Location size={25} color={`#cb4430`} />,
   },
   {
     title: "Working hours",

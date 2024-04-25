@@ -1,13 +1,16 @@
 import React from "react";
-import { About, Contact, Header, Services } from "../src/components";
+import { About, Contact, Header, HomeInfo, JoinUs, KeyFeatures, Welcome } from "../src/components";
 
 
 const home = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="overflow-x-hidden bg-primary">
       <Header />
-      <About />
-      <Services />
+      {/* <About /> */}
+      <Welcome />
+      <HomeInfo />
+      <KeyFeatures />
+      <JoinUs />
       <Contact />
     </div>
   );

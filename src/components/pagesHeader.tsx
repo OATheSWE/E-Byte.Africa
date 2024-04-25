@@ -24,8 +24,8 @@ const PagesHeader: FunctionComponent<HeaderText> = ({ text, text2 }) => {
   return (
     <Box className="w-full bg-secondary h-[350px] flex flex-col items-center justify-center">
       <animated.div ref={ref} style={headerAnimation}>
-        <Text className="text-[48px] font-bold text-primary">{text}</Text>
-        <Text className="text-[24px] text-white">{text2}</Text>
+        <Text className="text-[48px] font-bold text-accent">{text}</Text>
+        <Text className="text-[24px] text-primary">{text2}</Text>
       </animated.div>
     </Box>
   );
